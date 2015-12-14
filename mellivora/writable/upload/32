@@ -1,0 +1,11 @@
+Key : hi
+
+Algorithm : ArcFour
+
+Mode : STREAM
+
+Message was encoded using Basee64 and encrypted with DES
+
+Encrypted content : JPuPdFa0Ak8=
+
+Decrypt this to get your flag and enter the flag into the question box.

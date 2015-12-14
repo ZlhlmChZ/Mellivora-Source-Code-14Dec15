@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Heteron's Personal Website</title>
+	</head>
+	
+	<body>
+		<center>
+			<div style="width: 500px">
+				<h1>Heteron Parker</h1>
+				
+				<img src="..\TheStudentCode\Fawkes.jpg">
+				
+				<p>
+				I am a year 3 student currently pursuing a degree in Computer Security. 
+				</p>
+								
+				<!-- In case you forget, the password for this site is: flag_6d4bdd0871b19222015b77107141b75f5b5224ff -->
+					
+			</div>
+		</center>
+	</body>
+</html

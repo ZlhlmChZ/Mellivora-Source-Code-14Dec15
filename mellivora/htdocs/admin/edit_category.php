@@ -1,0 +1,40 @@
+<?php
+
+require('../../include/mellivora.inc.php');
+
+enforce_authentication(CONFIG_UC_MODERATOR);
+
+validate_id($_GET['id']);
+validateAuthority(2, $_GET['id']);
+
+$category = db_select_one(
+    'categories',
+    array('*'),
+    array('id' => $_GET['id'])
+);
+
+head('Site management');
+menu_management();
+
+section_subhead('Edit category: ' . $category['title']);
+form_start(CONFIG_SITE_ADMIN_RELPATH . 'actions/edit_category');
+form_input_text('Title', $category['title']);
+form_textarea('Description', $category['description']);
+echo '<script>   window.onload = function(){CKEDITOR.replace("description", {
+ filebrowserUploadUrl: "actions/upload.php"
+});}</script>';
+form_hidden('action', 'edit');
+form_hidden('id', $_GET['id']);
+form_button_submit('Save changes');
+form_end();
+
+section_subhead('Delete category: ' . $category['title']);
+form_start(CONFIG_SITE_ADMIN_RELPATH . 'actions/edit_category');
+form_input_checkbox('Delete confirmation');
+form_hidden('action', 'delete');
+form_hidden('id', $_GET['id']);
+message_inline_red('Warning! This will delete all challenges under this category, as well as all submissions, files, and hints related those challenges!');
+form_button_submit('Delete category', 'danger');
+form_end();
+
+foot();

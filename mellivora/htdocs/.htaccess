@@ -1,0 +1,11 @@
+Options -Indexes +MultiViews +FollowSymlinks
+Order Deny,Allow
+Allow from all
+AddType application/x-httpd-php .php
+
+AddType image/svg+xml .svg .svgz
+AddEncoding gzip svgz
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^instance/(.*) /home.php?instanceID=$1 [PT]

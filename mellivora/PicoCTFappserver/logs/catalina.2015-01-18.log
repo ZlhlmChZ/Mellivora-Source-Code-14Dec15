@@ -1,0 +1,23 @@
+18-Jan-2015 18:13:47.214 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+18-Jan-2015 18:13:47.215 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8443"]
+18-Jan-2015 18:13:47.215 INFO [Thread-6] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+18-Jan-2015 18:13:47.218 INFO [Thread-6] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+18-Jan-2015 18:13:47.275 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ToasterWars] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->1hge13e961jgdtsldful1e|46a32efb]-AdminTaskTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+18-Jan-2015 18:13:47.275 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ToasterWars] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->1hge13e961jgdtsldful1e|46a32efb]-HelperThread-#0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+18-Jan-2015 18:13:47.276 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ToasterWars] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->1hge13e961jgdtsldful1e|46a32efb]-HelperThread-#1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+18-Jan-2015 18:13:47.276 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ToasterWars] appears to have started a thread named [C3P0PooledConnectionPoolManager[identityToken->1hge13e961jgdtsldful1e|46a32efb]-HelperThread-#2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:635)
+18-Jan-2015 18:13:47.286 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+18-Jan-2015 18:13:47.287 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8443"]
+18-Jan-2015 18:13:47.288 INFO [Thread-6] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+18-Jan-2015 18:13:47.289 INFO [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+18-Jan-2015 18:13:47.311 INFO [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8443"]
+18-Jan-2015 18:13:47.311 INFO [Thread-6] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
